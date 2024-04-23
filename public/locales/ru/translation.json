@@ -1,0 +1,21 @@
+{
+  "auth": {
+    "signIn": "Войдите",
+    "continueWithGoogle": "Продолжить с Google",
+    "continueWithGitHub": "Продолжить с GitHub",
+    "inputLabel": "Установите ник",
+    "inputDescription": "Внимание: вы не сможете изменить ваш ник в будущем",
+    "inputPlaceholder": "Ваш ник",
+    "submitBtn": "Установить ник",
+    "navigateBtn": "Войти",
+    "logoutBtn": "Выйти"
+  },
+  "error": {
+    "nonUniqueNickname": "Такой никнейм занят. Пожалуйста, придумайте другой.",
+    "baseError": "Непредвиденная ошибка. Пожалуйста, попробуйте позже",
+    "noUid": "Не найден id пользователя",
+    "error": "Ошибка",
+    "invalidNickname": "Некорректный никнейм",
+    "nicknameRequired": "Введите ник"
+  }
+}

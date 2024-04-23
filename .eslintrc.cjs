@@ -8,6 +8,7 @@ module.exports = {
     'plugin:prettier/recommended',
     'prettier',
     'plugin:unicorn/recommended',
+    'plugin:@conarti/feature-sliced/recommended',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -18,6 +19,9 @@ module.exports = {
   },
   plugins: ['@typescript-eslint', 'react-refresh', 'prettier'],
   rules: {
+    'unicorn/no-null': 'off',
+    'unicorn/no-array-reduce': 'off',
+    'unicorn/no-array-callback-reference': 'off',
     'prettier/prettier': 'warn',
     'react-refresh/only-export-components': [
       'warn',
