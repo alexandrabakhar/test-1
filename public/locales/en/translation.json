@@ -1,0 +1,21 @@
+{
+  "auth": {
+    "signIn": "Sign in",
+    "continueWithGoogle": "Continue with Google",
+    "continueWithGitHub": "Continue with GitHub",
+    "inputLabel": "Set a nickname",
+    "inputDescription": "Please note: you will not be able to change your nickname in the future",
+    "inputPlaceholder": "Your nickname",
+    "submitBtn": "Submit nickname",
+    "navigateBtn": "Login",
+    "logoutBtn": "Logout"
+  },
+  "error": {
+    "nonUniqueNickname": "Nickname is already in use. Please choose another one.",
+    "baseError": "An unexpected error occurred",
+    "noUid": "No user id error",
+    "error": "Error",
+    "invalidNickname": "Invalid nickname",
+    "nicknameRequired": "Input nickname"
+  }
+}
