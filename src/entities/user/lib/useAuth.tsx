@@ -1,7 +1,7 @@
 import { getAuth, onAuthStateChanged } from 'firebase/auth'
 import { useEffect } from 'react'
 import { useAppDispatch } from '@/shared/model'
-import { getUserDataThunk } from '../model/getUserDataThunk'
+import { getUserDataThunk } from '../model/login/getUserDataThunk'
 import { clearUser } from '../model/store'
 
 export const useAuth = () => {

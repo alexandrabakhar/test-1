@@ -1,10 +1,14 @@
 import { Navigate, Outlet, useLocation } from 'react-router-dom'
+import { selectUser } from '@/entities/user'
+import { useAppSelector } from '@/shared/model'
+import { RoutePaths } from '../model/routePaths'
 
 export const ProtectedAuth = () => {
-  const isAuth = false
+  const { user } = useAppSelector(selectUser)
 
   const location = useLocation()
 
-  if (isAuth) return <Navigate to='/' state={{ from: location }} replace />
+  if (user?.nickname)
+    return <Navigate to={RoutePaths.Main} state={{ from: location }} replace />
   return <Outlet />
 }

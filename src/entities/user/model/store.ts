@@ -1,15 +1,18 @@
 import { PayloadAction, createSlice } from '@reduxjs/toolkit'
-import { getUserDataExtraReducers } from './getUserDataExtraReducers'
-import { registerUserExtraReducers } from './registerUserExtraReducers'
-import { User } from './types'
+import { getUserDataThunk } from './login/getUserDataThunk'
+import { registerUserThunk } from './register/registerUserThunk'
+import { searchUsersThunk } from './search/searchUsersThunk'
+import { User, UserInfo } from './types'
 
 export type UserSliceState = {
   user: Nullable<User>
   error: Nullable<string>
+  users?: Nullable<UserInfo[]>
 }
 const initialState: UserSliceState = {
   user: null,
   error: null,
+  users: null,
 }
 
 const userSlice = createSlice({
@@ -28,7 +31,18 @@ const userSlice = createSlice({
     },
   },
   extraReducers: builder => {
-    getUserDataExtraReducers(builder), registerUserExtraReducers(builder)
+    builder.addCase(getUserDataThunk.fulfilled, (state, { payload }) => {
+      state.user = payload.user
+    }),
+      builder.addCase(registerUserThunk.fulfilled, (state, { payload }) => {
+        if (state.user) {
+          state.user.role = payload.role
+          state.user.nickname = payload.nickname
+        }
+      }),
+      builder.addCase(searchUsersThunk.fulfilled, (state, { payload }) => {
+        state.users = payload.users
+      })
   },
 })
 export const { setUser, clearUser } = userSlice.actions

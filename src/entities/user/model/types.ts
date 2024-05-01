@@ -5,3 +5,12 @@ export type User = {
   nickname: Nullable<string>
   role: Nullable<Role>
 }
+
+export type UserInfo = {
+  nickname: string
+  role: Role
+  avatar: string
+  name: string
+  balance: number
+  phone: string
+}

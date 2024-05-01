@@ -17,5 +17,13 @@
     "error": "Error",
     "invalidNickname": "Invalid nickname",
     "nicknameRequired": "Input nickname"
-  }
+  },
+  "fullName": "Full name",
+  "role": "Role",
+  "nickname": "Nickname",
+  "phone": "Phone",
+  "balance": "Balance",
+  "search": "Search",
+  "reset": "Reset",
+  "clients": "Clients"
 }

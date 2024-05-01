@@ -1,7 +1,7 @@
 import { DocumentData, doc, getDoc } from '@firebase/firestore'
 import { db } from '@/shared/config'
 import { errorsHandler } from '@/shared/lib'
-import { User } from '../model/types'
+import { User } from '../types'
 
 type GetUser = (uid: User['uid']) => Promise<Nullable<DocumentData> | undefined>
 

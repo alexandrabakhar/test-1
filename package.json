@@ -20,6 +20,7 @@
     "@mantine/notifications": "^7.8.0",
     "@reduxjs/toolkit": "^2.2.3",
     "@tabler/icons-react": "^3.2.0",
+    "@tanstack/react-table": "^8.16.0",
     "clsx": "^2.1.0",
     "firebase": "^10.11.0",
     "i18next": "^23.11.2",
