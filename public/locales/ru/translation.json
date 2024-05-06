@@ -17,5 +17,13 @@
     "error": "Ошибка",
     "invalidNickname": "Некорректный никнейм",
     "nicknameRequired": "Введите ник"
-  }
+  },
+  "fullName": "ФИО",
+  "role": "Роль",
+  "nickname": "Ник",
+  "phone": "Телефон",
+  "balance": "Баланс",
+  "search": "Поиск",
+  "reset": "Сбросить",
+  "clients": "Клиенты"
 }

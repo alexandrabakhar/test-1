@@ -20,6 +20,7 @@ module.exports = {
   plugins: ['@typescript-eslint', 'react-refresh', 'prettier'],
   rules: {
     'unicorn/no-null': 'off',
+    'unicorn/no-array-for-each': 'off',
     'unicorn/no-array-reduce': 'off',
     'unicorn/no-array-callback-reference': 'off',
     'prettier/prettier': 'warn',

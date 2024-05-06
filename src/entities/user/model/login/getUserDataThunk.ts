@@ -1,6 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit'
 import { errorsHandler } from '@/shared/lib'
-import { getUser } from '../api/getUser'
+import { getUser } from './api'
 
 export const getUserDataThunk = createAsyncThunk(
   'user/fetchUser',
